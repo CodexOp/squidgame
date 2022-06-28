@@ -1,0 +1,109 @@
+.footerContainer {
+  background-image: url("../../assets/gradient-bg2.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  width: var(--margin-provider);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about {
+  width: 100%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  width: 100%;
+  max-width: 15%;
+}
+
+.socials {
+  width: 100%;
+  max-width: 30%;
+}
+
+.footerHeader {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.link {
+  margin-top: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.footerLogo {
+  width: 100%;
+  max-width: 300px;
+}
+
+.description {
+  margin-top: 1.5rem;
+  width: 90%;
+  font-size: 1.1rem;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.socialIcon {
+  height: auto;
+  width: 40px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .about {
+    max-width: 80%;
+  }
+  .links {
+    max-width: 80%;
+    margin-top: 2rem;
+  }
+  .socials {
+    max-width: 80%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    max-width: 90%;
+  }
+  .links {
+    max-width: 90%;
+    margin-top: 1.5rem;
+  }
+  .socials {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+}

@@ -4,6 +4,12 @@
   --margin-provider: calc(100% - 6rem);
 }
 
+* {
+  scrollbar-color: #c81c48 #2b2b2b;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Oxygen", "Ubuntu",
@@ -19,6 +25,19 @@ button {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c81c48;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 600px) {

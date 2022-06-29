@@ -68,8 +68,30 @@
   border: 2px solid #c81c48;
 }
 
+.knowMore:hover {
+  background-color: #c81c48;
+  transition: all 0.2s ease-in-out;
+}
+
+.knowMore:active {
+  background-color: #b21f4b;
+  transition: transform 0.09s ease-in-out;
+  transform: scale(0.95);
+}
+
 .mintNow {
   background-color: #c81c48;
+  transition: all 0.2s ease-in-out;
+}
+
+.mintNow:hover {
+  background-color: #ce2e56;
+}
+
+.mintNow:active {
+  background-color: #b21f4b;
+  transition: transform 0.09s ease-in-out;
+  transform: scale(0.95);
 }
 
 @media screen and (max-width: 900px) {

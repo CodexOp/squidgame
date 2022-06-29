@@ -1,6 +1,7 @@
 import logo from "../../assets/logo.png";
 import logoReduced from "../../assets/logo-reduced.png";
 import styles from "./Navbar.module.css";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Navbar = () => {
   return (
@@ -16,9 +17,10 @@ const Navbar = () => {
         <div className={styles.navButtons}>
           <div className={styles.navButton}>HOME</div>
           <div className={styles.navButton}>WEBSITE</div>
-          <div className={`${styles.connectButton} ${styles.navButton}`}>
-            CONNECT
-          </div>
+            <ConnectButton accountStatus={{
+    smallScreen: 'avatar',
+    largeScreen: 'full',
+  }}/>
         </div>
       </div>
     </div>

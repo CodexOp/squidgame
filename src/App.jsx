@@ -33,7 +33,7 @@ const BSCchain = {
 };
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, BSCchain, chain.polygon, chain.optimism, chain.arbitrum],
+  [BSCchain, chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
   [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()]
 );
 
